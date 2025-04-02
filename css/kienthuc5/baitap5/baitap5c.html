@@ -15,18 +15,18 @@
             background-color: #004080;
             color: white;
         }
+        .wrapper:hover  button {
+            background-color: gold;
+            color: #fff;
+        }
         span {
             color: gold;
         }
-        input:hover[type="Email"] {
+        .wrapper:hover form input[name="name"]::placeholder {
             color: gold;
         }
-        input:hover {
+        .wrapper:hover form input[name="name"] {
             background-color: #ddd;
-        }
-        button:hover {
-            background-color: gold;
-            color: #fff;
         }
     </style>
 </head>
@@ -35,8 +35,10 @@
     <h1><span>Earn income</span> with your CSS skills</h1>
     <p>Sign up and we'll send you the best freelance opportunities straight to your inbox.</p>
     <p>we're buliding the largest self-service freelancing marketplace for people like you.</p>
-    <input type="email" placeholder="email address">
-    <button type="submit">Send Me Opportunities</button>
+    <form>
+        <input  name="name" type="email" placeholder="email address">
+        <button type="submit">Send Me Opportunities</button>
+    </form>
 </div>
 </body>
 </html>
