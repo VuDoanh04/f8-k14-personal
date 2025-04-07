@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .x3 {
+            margin: 10px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .x1 {
+            display: block;
+            height: 50px;
+            background-color: chocolate;
+            position: relative;
+        }
+        .x1 > span {
+            position: absolute;
+            color: white;
+            left: 20px;
+            top: 10px;
+
+        }
+        .x1  span::before {
+            content: '\271A';
+            margin-right: 10px;
+        }
+        .x3 input[ name="check" ]:checked ~ .x2 {
+            display: block;
+        }
+        .x2 {
+            display: none;
+            margin-left: 20px;
+        }
+        .x3 input:checked + .x1 span::before {
+            content: "\268A";
+        }
+
+    </style>
+</head>
+<body>
+<div class="x3">
+    <input type="checkbox"  name="check" id="check1" hidden="hidden">
+    <label for="check1"  class="x1"><span>How to set random colors?</span></label>
+    <div class="x2">
+        <span>To set random colors:</span>
+        <ol>
+            <li>Add <strong>jag-fag-random-colors</strong> class.</li>
+            <li>To change color, open theme{num}.css, find "jag-faq-random-colors".</li>
+            <li>You can change color from here.</li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis doloremque eius eligendi esse fugiat incidunt laboriosam laudantium minus natus nemo nobis recusandae ullam unde velit, voluptas voluptate! Ad adipisci ipsam iure odit? Consequuntur ducimus eaque exercitationem facere facilis nam nesciunt quas quibusdam tenetur velit. Cupiditate delectus, deserunt distinctio eaque eos fugiat molestias necessitatibus non nulla officia omnis quia saepe sit soluta temporibus ullam vel veniam veritatis voluptate voluptatem. Delectus dolorum sint vel! Consectetur magni numquam obcaecati placeat possimus suscipit.</p>
+    </div>
+</div>
+<div class="x3">
+    <input type="checkbox"  name="check" id="check2" hidden="hidden">
+    <label for="check2"  class="x1"><span>How to use theme colors and add new theme color?</span></label>
+    <div class="x2">
+        <span>To set random colors:</span>
+        <ol>
+            <li>Add <strong>jag-fag-random-colors</strong> class.</li>
+            <li>To change color, open theme{num}.css, find "jag-faq-random-colors".</li>
+            <li>You can change color from here.</li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis doloremque eius eligendi esse fugiat incidunt laboriosam laudantium minus natus nemo nobis recusandae ullam unde velit, voluptas voluptate! Ad adipisci ipsam iure odit? Consequuntur ducimus eaque exercitationem facere facilis nam nesciunt quas quibusdam tenetur velit. Cupiditate delectus, deserunt distinctio eaque eos fugiat molestias necessitatibus non nulla officia omnis quia saepe sit soluta temporibus ullam vel veniam veritatis voluptate voluptatem. Delectus dolorum sint vel! Consectetur magni numquam obcaecati placeat possimus suscipit.</p>
+    </div>
+</div>
+<div class="x3">
+    <input type="checkbox"  name="check" id="check3" hidden="hidden">
+    <label for="check3"  class="x1"><span>How to change icon?</span></label>
+    <div class="x2">
+        <span>To set random colors:</span>
+        <ol>
+            <li>Add <strong>jag-fag-random-colors</strong> class.</li>
+            <li>To change color, open theme{num}.css, find "jag-faq-random-colors".</li>
+            <li>You can change color from here.</li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corporis doloremque eius eligendi esse fugiat incidunt laboriosam laudantium minus natus nemo nobis recusandae ullam unde velit, voluptas voluptate! Ad adipisci ipsam iure odit? Consequuntur ducimus eaque exercitationem facere facilis nam nesciunt quas quibusdam tenetur velit. Cupiditate delectus, deserunt distinctio eaque eos fugiat molestias necessitatibus non nulla officia omnis quia saepe sit soluta temporibus ullam vel veniam veritatis voluptate voluptatem. Delectus dolorum sint vel! Consectetur magni numquam obcaecati placeat possimus suscipit.</p>
+    </div>
+</div>
+</body>
+</html>
