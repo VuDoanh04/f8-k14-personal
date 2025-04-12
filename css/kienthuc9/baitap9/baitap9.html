@@ -5,118 +5,112 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="
+    https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css
+    " rel="stylesheet">
     <title>Document</title>
     <style>
-        * {
+        *{
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: sans-serif;
         }
-
-        body {
-            background-color: #d9d9d9;
-        }
-
         .container {
             display: flex;
         }
-
-        .sidebar {
-            background-color: #1a2238;
-            color: #fff;
-            width: 220px;
-            min-height: 100vh;
+        .menu {
+            width: 200px;
+            height: 800px;
             padding: 20px;
+            background-color: #1a2238;
+            color: white;
         }
-
-        .sidebar h2 {
-            margin-bottom: 20px;
+        .menu h2 {
+            text-align: center;
+            padding: 0px 0px 20px;
         }
-
-        .sidebar .menu li {
+        li {
             list-style: none;
-            padding: 10px 0;
-            cursor: pointer;
+            padding: 20px 0px;
+            font-size: 14px;
         }
-
-        .main-content {
-            flex: 1;
-            padding: 40px;
+        span {
+            padding: 5px;
         }
-
-        .main-content h2 {
+        .members {
+            margin: 0 auto;
+            justify-content: center;
+            position: relative;
+        }
+        .members h2 {
             margin-bottom: 20px;
             text-align: center;
         }
-
         table {
             width: 100%;
-            border-collapse: collapse;
             background-color: white;
             margin-bottom: 30px;
         }
-
         table th, table td {
-            padding: 12px;
+            padding: 20px;
             text-align: left;
             border-bottom: 1px solid #ccc;
         }
-
-        .edit {
+        label {
             background-color: #28a745;
             color: white;
             padding: 5px 10px;
-            border: none;
+            border: 2px solid rgba(2, 2, 23, 0.5);
             margin-right: 5px;
             cursor: pointer;
+            border-radius: 5px;
         }
 
         .delete {
             background-color: #dc3545;
             color: white;
             padding: 5px 10px;
-            border: none;
+            border: 2px solid rgba(2, 2, 23, 0.5);
             cursor: pointer;
+            border-radius: 5px;
         }
-
-        .modal {
+        .sub-edit {
+            top : 350px;
+            left: 10px;
+            position: absolute;
             background-color: white;
             width: 400px;
-            padding: 20px;
-            border-radius: 6px;
+            padding: 5px;
             box-shadow: 0 0 10px rgba(0,0,0,0.3);
-            margin: 0 auto;
             display: none;
         }
-
-        .modal-header {
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: #1a2238;
             color: white;
             padding: 10px;
-            border-top-left-radius: 6px;
-            border-top-right-radius: 6px;
         }
 
-        .modal-body {
+        .body {
             padding: 20px 0;
         }
 
-        .modal-body input {
+        .body input {
             width: 100%;
             padding: 10px;
             margin-bottom: 10px;
         }
 
-        .modal-actions {
+        .button {
             display: flex;
-            justify-content: space-between;
+            width: calc(100/2);
         }
 
-        .modal-actions .close {
+        .button .close {
+            width: 100%;
             background-color: red;
             color: white;
             padding: 10px 20px;
@@ -124,28 +118,36 @@
             cursor: pointer;
         }
 
-        .modal-actions .save {
+        .button .save {
+            width: 100%;
             background-color: green;
             color: white;
             padding: 10px 20px;
             border: none;
             cursor: pointer;
         }
+        #check:checked ~ .sub-edit {
+            display: block;
+        }
+
+
+
 
     </style>
 </head>
 <body>
 <div class="container">
-    <div class="sidebar">
-        <h2>F8 Admin</h2>
-        <ul class="menu">
-            <li>👤 Quản Lý Đơn Hàng</li>
-            <li>🚗 Quản Lý Xe</li>
-            <li>🔧 Quản Lý Dịch Vụ</li>
-            <li>⚙️ Cài Đặt Khác</li>
+    <div class="menu">
+        <h2 class="mdi mdi-stack-overflow">F8 Admin</h2>
+        <span>Menu</span>
+        <ul>
+            <li class="mdi mdi-account"> Quản Lý Đơn Hàng</li>
+            <li class="mdi mdi-account"> Quản Lý Xe</li>
+            <li class="mdi mdi-account"> Quản Lý Dịch Vụ</li>
+            <li class="mdi mdi-account"> Cài Đặt Khác</li>
         </ul>
     </div>
-    <main class="main-content">
+    <div class="members">
         <h2>Members</h2>
         <table>
             <thead>
@@ -162,8 +164,24 @@
                 <td>Tran Van A</td>
                 <td>a@test.con</td>
                 <td>
-                    <button class="edit">✏️ edit</button>
+                    <label for="check">✏️ edit</label>
+                    <input type="checkbox" id="check" hidden="hidden">
                     <button class="delete">🗑 delete</button>
+                    <div class="sub-edit">
+                        <div class="header">
+                            <h3>New member</h3>
+                            <label for="check" class="mdi mdi-close"></label>
+                        </div>
+                        <div class="body">
+                            <input type="text" placeholder="Skill" />
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <div class="button">
+                                <button class="close">Close</button>
+                                <button class="save">Save</button>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -171,8 +189,24 @@
                 <td>Tran Van A</td>
                 <td>a@test.con</td>
                 <td>
-                    <button class="edit">✏️ edit</button>
+                    <label for="check">✏️ edit</label>
+                    <input type="checkbox" id="check" hidden="hidden">
                     <button class="delete">🗑 delete</button>
+                    <div class="sub-edit">
+                        <div class="header">
+                            <h3>New member</h3>
+                            <label for="check" class="mdi mdi-close"></label>
+                        </div>
+                        <div class="body">
+                            <input type="text" placeholder="Skill" />
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <div class="button">
+                                <button class="close">Close</button>
+                                <button class="save">Save</button>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             <tr>
@@ -180,29 +214,29 @@
                 <td>Tran Van A</td>
                 <td>a@test.con</td>
                 <td>
-                    <button class="edit">✏️ edit</button>
+                    <label for="check">✏️ edit</label>
+                    <input type="checkbox" id="check" hidden="hidden">
                     <button class="delete">🗑 delete</button>
+                    <div class="sub-edit">
+                        <div class="header">
+                            <h3>New member</h3>
+                            <label for="check" class="mdi mdi-close"></label>
+                        </div>
+                        <div class="body">
+                            <input type="text" placeholder="Skill" />
+                            <input type="text" placeholder="Name" />
+                            <input type="email" placeholder="Email" />
+                            <div class="button">
+                                <button class="close">Close</button>
+                                <button class="save">Save</button>
+                            </div>
+                        </div>
+                    </div>
                 </td>
             </tr>
             </tbody>
         </table>
-
-        <div class="modal">
-            <div class="modal-header">
-                <h3>New member</h3>
-                <span class="close-btn">×</span>
-            </div>
-            <div class="modal-body">
-                <input type="text" placeholder="Skill" />
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
-                <div class="modal-actions">
-                    <button class="close">Close</button>
-                    <button class="save">Save</button>
-                </div>
-            </div>
-        </div>
-    </main>
+    </div>
 </div>
 </body>
 </html>
