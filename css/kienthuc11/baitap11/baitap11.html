@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // Khai báo biến với các kiểu dữ liệu
+    let name = "doanh"; // kiểu string
+    let age = 20;   // kiểu number
+    let isStudent = true; // kiểu boolean
+    const PI = 3.14; // hằng số
+    console.log("1. Biến và Kiểu Dữ Liệu:");
+    console.log("1. Giá trị của PI:", PI)
+    console.log("Tên:", name);
+    console.log("Tuổi:", age);
+    console.log("Là học sinh:", isStudent);
+    //// 2. Toán tử số học
+    let a = 10;
+    let b = 3;
+    console.log("2. Toán tử số học:");
+    console.log(" (a + b):", a + b);//cộng
+    console.log("(a - b):", a - b);//trừ
+    console.log("(a * b):", a * b);//nhân
+    console.log("(a / b):", a / b);//chia
+    console.log("(a % b):", a % b);//lấy dư 1
+    // 3. Toán tử tăng/giảm (++ và --)
+    let x = 5;
+    console.log("3. Toán tử tăng/giảm:");
+    console.log("Giá trị ban đầu x:", x);
+    console.log("++x (tăng trước):", ++x); // x tăng lên trước khi trả về
+    console.log("Giá trị sau khi ++x:", x);
+    console.log("x++ (tăng sau):", x++);   // y trả về trước, rồi mới tăng
+    console.log("Giá trị sau khi x++:", x);
+    console.log("--x(giảm trước):", --x);
+    console.log("x-- (giảm sau):", x--);
+    console.log("Giá trị sau khi x--:", x);
+    // 4. Toán tử với chuỗi (String)
+    let ho = "vu";
+    let ten = "doanh";
+    let hoVaTen = ho + " " + ten;
+    let cauChao = "Xin chào, " + hoVaTen + "!";
+    console.log("4. Toán tử với chuỗi:");
+    console.log("Họ và tên:", hoVaTen);
+    console.log("Câu chào:", cauChao);
+    // 5. Number + String (Ép kiểu ngầm định)
+    let so = 10;
+    let chu = "20";
+    let ketQua = so + chu;  // tự động ép kiểu: 10 thành "10" => "1020"
+    console.log("5. Number + String (ép kiểu ngầm):");
+    console.log("10 + '20' =", ketQua);
+    // 6. Ép kiểu tường minh
+    let chuoi = "123";
+    let number = Number(chuoi);  // Ép chuỗi sang số
+    let soNguyen = 456;
+    let chuoiMoi = String(soNguyen); // Ép số sang chuỗi
+    let soChuoi = "abc";
+    let soKetQua = number(soChuoi);
+    console.log("6. Ép kiểu tường minh:");
+    console.log('"123" => Number:', number);
+    console.log("456 => String:", chuoiMoi);
+    console.log("abc => Number:", soKetQua);//NaN
+
+</script>
+</body>
+</html>
