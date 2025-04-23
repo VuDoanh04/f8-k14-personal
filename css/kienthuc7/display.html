@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /*span {*/
+        /*    display: inline-block;*/
+        /*    margin: 10px;*/
+        /*    border: 1px solid black;*/
+        /*    width: 100px;*/
+        /*}*/
+        /*span:hover ~ ul li {*/
+        /*    display: inline-block;*/
+        /*}*/
+        p {
+            margin: 10px;
+            border: 1px solid black;
+        }
+        ul {
+            background-color: #020101;
+        }
+        ul li {
+            color: white;
+            display: inline-block;
+            padding: 10px;
+        }
+        ul li:hover ~ .ex03 {
+            display: block;
+        }
+        .ex03 {
+            color: white;
+            display: none;
+            padding: 10px;
+            background-color: dodgerblue;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+<h1> text 01</h1>
+<p> text 03</p>
+<span> text 02</span>
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>js</li>
+    <li>jv</li>
+    <div class="ex03">
+        <div>1</div>
+        <div>1</div>
+        <div>1</div>
+    </div>
+</ul>
+</body>
+</html>

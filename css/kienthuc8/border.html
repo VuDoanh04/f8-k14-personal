@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .border {
+            width: 200px;
+            /*height: 100px;*/
+            background-color: white;
+            border: 1px solid black;
+            border-style: solid;
+            /*border-color:   black  ;*/
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 10px 10px 50px #888888;
+        }
+        .container {
+            position: relative;
+        }
+        .avatar1 {
+            width: 20px;
+            height: 20px;
+            background: #a063c3;
+            border-radius: 50px;
+            color: white;
+            text-align: center;
+        }
+        .container > div {
+            display: inline-block;
+        }
+        .border1 {
+            width: 0px;
+            position: absolute;
+            border-style: solid;
+            border-width: 10px;
+            border-color: transparent black transparent  transparent;
+            /*border-style: solid;*/
+            left: 5px;
+        }
+    </style>
+</head>
+<!--transparent: màu trong suốt-->
+<body>
+<div class="container">
+    <div class="avatar1">A</div>
+    <div class="border">
+        <div class="border1"></div>
+        <span>hello anh em</span>
+    </div>
+</div>
+
+</body>
+</html>
+<!--dotted- Xác định đường viền chấm bi-->
+<!--dashed- Xác định đường viền đứt nét-->
+<!--solid- Xác định đường viền liền-->
+<!--double- Xác định đường viền kép-->
+<!--groove- Xác định đường viền có rãnh 3D. Hiệu ứng phụ thuộc vào giá trị border-color-->
+<!--ridge- Xác định đường viền có gờ 3D. Hiệu ứng phụ thuộc vào giá trị border-color-->
+<!--inset- Xác định đường viền chèn 3D. Hiệu ứng phụ thuộc vào giá trị border-color-->
+<!--outset- Xác định đường viền 3D. Hiệu ứng phụ thuộc vào giá trị border-color-->
+<!--none- Không xác định đường viền-->
+<!--hidden- Xác định đường viền ẩn-->

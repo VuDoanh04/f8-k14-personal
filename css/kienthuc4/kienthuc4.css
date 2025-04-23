@@ -1,0 +1,8 @@
+p
+{ color:red}
+.ex03 >.ex03-01 > p {
+    color: aqua;
+}
+.ex03 .ex03-01  p {
+    color: aqua;
+}

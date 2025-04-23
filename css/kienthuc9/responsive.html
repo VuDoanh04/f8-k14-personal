@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link href="
+        https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css
+        " rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        /*body {*/
+        /*    background-color: white;*/
+        /*}*/
+        /*@media screen and (max-width: 900px) and (min-width: 600px) {*/
+        /*    body {*/
+        /*        background-color: azure;*/
+        /*    }*/
+        /*}*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            border-bottom: 1px solid blue;
+            display: flex;
+        }
+
+        header ul .nav li {
+            display: inline-block;
+            padding: 8px;
+            position: relative;
+
+        }
+
+        header ul li:before {
+            display: none;
+        }
+
+        header > ul {
+            display: block;
+            position: absolute;
+            right: 50px;
+            top: 10px;
+        }
+
+        li:hover {
+            cursor: pointer;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            width: 1000px;
+            margin: 0 auto;
+        }
+        input {
+            display: none;
+        }
+
+        .container ul li:nth-child(1) {
+            display: none
+        }
+
+        li:nth-of-type(2):before {
+            display: none;
+        }
+
+        .container ul .menu2 {
+            display: none;
+            position: absolute;
+        }
+
+        @media screen and (max-width: 500px) {
+            .container ul {
+                position: absolute;
+                top:0px;
+                width: 100px;
+                height: 1000px;
+                background-color: black;
+                left:0px;
+                display: none;
+            }
+
+            header ul li {
+                display: block;
+                color: white;
+            }
+
+            .menu-icon {
+                display: block;
+                padding: 16px;
+            }
+
+            header ul li:before {
+                display: inline-block;
+            }
+
+            li:nth-child(2):before {
+                display: inline-block;
+            }
+
+            .container ul li:nth-child(1) {
+                font-size: 0px;
+                display: block;
+                top: 0px;
+            }
+            .container ul .menu2 {
+                position: absolute;
+                display: block;
+                color: white;
+                font-size: 18px;
+                bottom: 10px;
+            }
+            #menu-icon:checked ~ ul {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container">
+        <img alt="logo" width="52px" src="https://fullstack-nodejs.fullstack.edu.vn/assets/f8_icon.png">
+        <input id="menu-icon" type="checkbox">
+        <ul class="tab">
+            <div class="nav">
+                <li class="logo"><img alt="logo" width="52px"
+                                      src="https://fullstack-nodejs.fullstack.edu.vn/assets/f8_icon.png"></li>
+                <li class="mdi mdi-account-badge">home</li>
+                <li>products</li>
+                <li>customers</li>
+                <li>about</li>
+                <li>home</li>
+                <li>products</li>
+                <li>customers</li>
+                <li>about</li>
+            </div>
+            <div class="menu2">
+                <span>ngõ 41 trần duy hưng</span>
+                <span>0123456789</span>
+            </div>
+        </ul>
+        <label for="menu-icon" class="menu-icon mdi mdi-microsoft"></label>
+    </div>
+</header>
+</body>
+</html>

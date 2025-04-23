@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>From</h1>
+<!--thẻ input phải trong thẻ form mới load -->
+<!-- action là địa chỉ đi đến-->
+<!--method mặc định giao thức là get -->
+<!-- get có thể nhập ulr để đi đến-->
+<!-- post thì bảo mật hơn ko bằng ulr dc-->
+<!-- thẻ label và for cùng tên với id-->
+<!--placeholder là gợi ý-->
+<!-- radio chỉ nhận một giá trị duy nhất name phải trùng nhau-->
+<!--select để chọn nhiều option-->
+<!-- label là một nhãn-->
+<!-- thẻ textarea giống như thẻ bình luận -->
+<!--checked là mặc định cho input-->
+<!-- disabled an toàn hơn-->
+<!--readonly mặc định nhưng ko an toàn-->
+<!--required bắt buộc nhập vô -->
+<form action="https://api-gateway.fullstack.edu.vn/action_page.php"
+      method="post">
+    <label for="name"> nhập họ và tên</label> <br>
+    <input id="name" placeholder="họ và tên" name="name" type="text" required/><br>
+    <label for="age">nhập tuổi</label><br>
+    <input id="age" placeholder="tuổi" name="age" type="number" value="20"/><br>
+    <label for="address"> nhập địa chỉ</label><br>
+    <input id="address" placeholder="Địa chỉ" name="address" value="hà nội"/><br>
+    <label for="email"> Email</label><br>
+    <input id="email" placeholder="email" name="email" type="email"value="anh@gmail.com" disabled/><br>
+    <label for="pass"> Email</label><br>
+    <input id="pass" placeholder="pass" name="pass" type="password" value="123456"/><br>
+    <label> giới tính</label><br>
+    <label for="male">male</label>
+    <input id="male" name="gender" value="male" type="radio" checked/>
+    <label for="female"> female</label>
+    <input id="female" name="gender" value="female" type="radio" /><br>
+    <label for="file"> file</label>
+    <input id="file" name="file"  type="file"  multiple accept=".png" hidden="hidden"/><br>
+    <label> nhập ngôn ngữ:</label>
+    <label>vn</label>
+    <input id="vn" value="vn" type="checkbox" name="lang[]" checked/>
+    <label>en</label>
+    <input id="jp" value=" en" type="checkbox" name="lang[]"/>
+    <label>jp</label>
+    <input id="jp" value="jp" type="checkbox" name="lang[]"/><br>
+    <label>học code</label>
+    <select name="center" >
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select><br>
+    <label>xx </label>
+    <input type="range" min="0"  max="100" name="salary"/><br>
+    <label>mô tả bản thân </label>
+    <textarea  name="description"rows="5" placeholder="description"> hi anh em </textarea>
+    <input type="submit"/><br>
+</form>
+</body>
+</html>

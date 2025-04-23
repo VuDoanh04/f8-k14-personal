@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .ex03 {
+            background-color: red;
+            color: white;
+            margin: auto;
+            width: 200px;
+            height: 200px;
+
+        }
+        .ex03-01, .ex03-02, .ex03-03 {
+            padding: 10px;
+            border:1px solid blue;
+
+        }
+        .ex03-02 {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: #004080;
+        }
+        .ex03-03  {
+            background: gold;
+            position: relative;
+            z-index: 1;
+        }
+        .ex {
+            width: 250px;
+            height: 250px;
+            border: 1px solid blue;
+            margin: auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+<div class="ex">
+    <div class="ex03">
+        <div class="ex03-01">ex03-01</div>
+        <div class="ex03-02">ex03-02</div>
+        <div class="ex03-03">ex03-03</div>
+    </div>
+</div>
+</body>
+</html>

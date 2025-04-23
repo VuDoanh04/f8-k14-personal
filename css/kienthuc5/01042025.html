@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+        <style>
+            h1::before {
+                            content: "  ❤️"
+                        }
+            h1::after {
+                            content:" 🤣";
+                        }
+            p::first-letter{
+                            color: lightseagreen;
+                        }
+            p::first-line{
+                            color: red;
+                        }
+            input::placeholder{
+                            color: lightseagreen;
+                        }
+        </style>
+    /*ul > span ~ li{*/
+    /*    color: lightseagreen;*/
+    /*}*/
+    /*ul > span > ~ li, .footer ul li {*/
+    /*    color: lightseagreen;*/
+    /*}*/
+    /*.footer ul li {*/
+    /*    font-weight: 600;*/
+    /*}*/
+    ul > span + li {
+        color: red;
+    }
+    .container form input[name="name"]{
+    {
+        color: red;
+    }
+</style>
+<body>
+<!-- ~ là find elements have same level-->
+<!-- > là child-->
+<!-- khoảng trắng all child / grand child-->
+<!-- dấu , all ò selector have same css code và dc nhiều thành phần -->
+<!-- + là chọn phần tử đứng sau, dùng cho các con cùng cấp ko dùng cho cha con-->
+<div class="container">
+    <h1>Học lập trình</h1>
+    <form> <input name="name" type="text" placeholder="username"><br>
+        <span> điền vào đây đi em </span> <br>
+        <input name="pass" type="password" placeholder="password">
+    </form>
+    <ul>
+        <span>test</span>
+        <li class="item"> html</li>
+        <li>Css</li>
+        <li>Js</li>
+        <li>Ts</li>
+        <li>Docker</li>
+        <li>K8s</li>
+    </ul>
+</div>
+<div class="footer">
+    <ul>
+        <li>html</li>
+        <li>Css</li>
+        <li>Js</li>
+    </ul>
+</div>
+<!--<h1>-->
+<!--Pseudo Element-->
+<!--</h1>-->
+<!--<p>Code hình trái tim được xuất phát từ bộ phim Trung Quốc độc đáo có tựa đề "Thắp sáng anh, sưởi ấm em". Ở trong tập 5 của phim, mọi người sẽ được chứng kiến chàng trai thủ khoa Lý (Lý Tuân) đã sáng tạo một đoạn mã code để tạo nên hình trái tim lãng mạn, được gửi tặng đến người mà anh ta thầm thương.</p>-->
+<!--<input type="text" name="name" placeholder=" name"><-->
+</body>
+</html>

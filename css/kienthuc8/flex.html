@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container1 {
+            width: 100%;
+            height: 900px;
+            background: #98ef50;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item1 {
+            width: 300px;
+            height: 200px;
+            border: 1px solid red;
+            /*display: flex;*/
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            flex-basis: 300px;
+
+
+        }
+        /*.item {*/
+        /*    width: 300px;*/
+        /*    height: 200px;*/
+        /*    border: 1px solid red;*/
+        /*}*/
+        /*.container {*/
+        /*    float: right;*/
+
+        /*}*/
+    </style>
+</head>
+<body>
+<div class="container1">
+    <div class="item1"><img src="https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png"></div>
+    <div class="item1"><img src="https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png"></div>
+    <div class="item1"><img src="https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png"></div>
+    <div class="item1"><img src="https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png"></div>
+
+</div>
+<!--<hr>-->
+<!--<div class="container">-->
+<!--    <div class="item"></div>-->
+<!--    <div class="item"></div>-->
+<!--    <div class="item"></div>-->
+<!--    <div class="item"></div>-->
+<!--    <div class="item"></div>-->
+<!--</div>-->
+
+</body>
+</html>
+<!--flex-direction
+flex-wrap
+flex-flow
+justify-content
+align-items
+align-content-->
+<!--justify-content: Điều chỉnh các item của flexbox trên trục chính
+
+Chọn từ start, end, flex-start, flex-end, center, between hoặc around.
+
+start luôn luôn thể hiện theo hướng từ trái qua phải hoặc từ trên xuống dưới.
+
+end luôn luôn thể hiện ngược lại với start
+
+flex-start thể hiện theo hướng của flex-decoration
+
+flex-end thể hiện theo hướng ngược lại của flex-decoration
+
+Trục x để bắt đầu, trục y nếu flex-direction: column.
+
+Mặc định của trình duyệt là justify-content: flex-start.
+
+align-content: Căn chỉnh các hàng, cột trong flexbox container khi có nhiều hàng, cột.
+
+Chọn từ start, end, flex-start, flex-end, center, between, around hoặc stretch.
+
+start luôn luôn thể hiện theo hướng từ trái qua phải hoặc từ trên xuống dưới.
+
+end luôn luôn thể hiện ngược lại với start
+
+flex-start thể hiện theo hướng của flex-decoration
+
+flex-end thể hiện theo hướng ngược lại của flex-decoration
+
+Mặc định của trình duyệt là align-content: stretch.
+
+align-self: Căn chỉnh 1 item theo hướng khối cho mục được chọn bên trong một flexbox hoặc grid container.
+
+Chọn từ start, end, flex-start, flex-end, center, between, around hoặc stretch.
+
+start luôn luôn thể hiện theo hướng từ trái qua phải hoặc từ trên xuống dưới.
+
+end luôn luôn thể hiện ngược lại với start
+
+flex-start thể hiện theo hướng của flex-decoration
+
+flex-end thể hiện theo hướng ngược lại của flex-decoration
+
+Mặc định của trình duyệt là align-self: auto (giống với align-items của flexbox).
+
+align-items: Căn chỉnh các item trong các hàng, cột bên trong một flexbox hoặc grid container.
+
+Chọn từ start, end, flex-start, flex-end, center, between, around, stretch hoặc baseline.
+
+start luôn luôn thể hiện theo hướng từ trái qua phải hoặc từ trên xuống dưới.
+
+end luôn luôn thể hiện ngược lại với start
+
+flex-start thể hiện theo hướng của flex-decoration
+
+flex-end thể hiện theo hướng ngược lại của flex-decoration
+
+Mặc định của trình duyệt là align-items: stretch.
+
+Các thuộc tính khác của flexbox:
+
+flex-direction: Xác định hướng chính của flex container, cũng như hành vi wrapping của nó.
+
+Chọn từ row, row-reverse, column hoặc column-reverse.
+
+row và row-reverse sẽ căn chỉnh các mục flex theo chiều ngang.
+
+column và column-reverse sẽ căn chỉnh các mục flex theo chiều dọc.
+
+Mặc định của trình duyệt là flex-direction: row.
+
+flex-wrap: Xác định liệu các item có wrap hay không.
+
+Chọn từ nowrap, wrap hoặc wrap-reverse.
+
+Mặc định của trình duyệt là flex-wrap: nowrap.
+
+order: Xác định thứ tự của các item flex.
+
+Các mục flex được sắp xếp theo thứ tự tăng dần.
+
+Các mục flex có cùng giá trị order sẽ được sắp xếp theo thứ tự xuất hiện trong mã HTML.
+
+Các mục flex có giá trị order âm sẽ được sắp xếp trước các mục flex có giá trị order dương.
+
+Mặc định của trình duyệt là order: 0.
+
+flex-basis: Xác định kích thước ban đầu của một mục linh hoạt.
+
+Các giá trị hợp lệ bao gồm auto, inherit, initial, unset hoặc một giá trị độ dài.
+
+Mặc định của trình duyệt là flex-basis: auto.
+
+flex-shrink: Xác định yếu tố co lại của một mục linh hoạt.
+
+Các giá trị hợp lệ bao gồm 0, inherit, initial, unset hoặc một số.
+
+Các mục flex sẽ co lại theo tỷ lệ tương ứng với các mục flex khác.
+
+Mặc định của trình duyệt là flex-shrink: 1.
+
+flex-grow: Xác định yếu tố tăng trưởng của một mục linh hoạt.
+
+Các giá trị hợp lệ bao gồm 0, inherit, initial, unset hoặc một số.
+
+Các mục flex sẽ tăng trưởng theo tỷ lệ tương ứng với các mục flex khác.
+
+Mặc định của trình duyệt là flex-grow: 0.
+
+flex-flow: Là thuộc tính viết tắt cho các thuộc tính flex-direction và flex-wrap.
+
+Các giá trị hợp lệ bao gồm row, row-reverse, column, column-reverse, nowrap, wrap hoặc wrap-reverse.
+
+Các giá trị được phân tách bằng dấu cách.
+
+Mặc định của trình duyệt là flex-flow: row nowrap.
+
+flex: Là thuộc tính viết tắt cho các thuộc tính flex-grow, flex-shrink và flex-basis.
+
+Mặc định của trình duyệt là flex: 0 1 auto.-->

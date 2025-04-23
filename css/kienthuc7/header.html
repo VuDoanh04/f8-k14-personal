@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            border: 1px solid red;
+            position: relative;
+        }
+        header  ul  li {
+            display: inline-block;
+            padding: 16px;
+            position: relative;
+        }
+        header > ul{
+            position: absolute;
+            right: 50px;
+            top: 10px ;
+        }
+        li:hover {
+            cursor: pointer;
+        }
+        .ex03 {
+            display: none;
+            position: absolute;
+            top: 50px;
+            border: 1px solid red;
+        }
+        header > ul > li:nth-of-type(2):hover .ex03 {
+            display: block;
+        }
+        .ex03 li {
+            list-style: none;
+            padding: 15px;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <img  alt="logo"width="50px" src="https://fullstack-nodejs.fullstack.edu.vn/assets/f8_icon.png">
+    <ul>
+        <li>home
+        </li>
+        <li>products
+            <ul class="ex03">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul></li>
+        <li>customers</li>
+        <li>about</li>
+    </ul>
+</header>
+</body>
+</html>

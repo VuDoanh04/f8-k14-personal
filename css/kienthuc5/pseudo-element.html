@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*input:focus{*/
+        /*    color: red;*/
+        /*}*/
+        /*ul li:nth-of-type(2){*/
+        /*    color: lightseagreen;*/
+        /*}*/
+        input[id="name1"]:checked ~ p {
+            color: red;
+        }
+        input[ id="name2"]:checked ~ p {
+            color: lightseagreen;
+        }
+        input[id="name3"]:checked ~ p {
+            color: green;
+        }
+        h1:hover{
+            color: red;
+        }
+        button:active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<h1> pseudo class </h1>
+<input type="text" name="name" placeholder="name">
+<ul>
+    <li>html</li>
+    <li>css</li>
+    <li>js</li>
+</ul>
+<input name="name" type="radio"  id="name1">
+<input name="name" type="radio"  id="name2">
+<input name="name" type="radio"  id="name3">
+<p>ấnchecked</p>
+<button>submit</button>
+</body>
+</html>

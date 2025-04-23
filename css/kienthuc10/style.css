@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Droid", sans-serif;
+}
+.container {
+    max-width: 1192px;
+    margin: 0 auto;
+}
+.primary-font-family {
+    font-family: "Great Vibes", cursive;
+
+}
+.primary-colors {
+    color: #a4b9f3;
+}
+/*padding 4px 8px 12px
+pa-1:4px
+pa-2:8px
+pa-3:12px
+pt-2 padding-top:4px*/
+.pa-4 {
+    padding: 8px;
+}
+.d-inline-block {
+    display: inline-block;
+}
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.align-items-center {
+    align-items: center;
+}
+.justify-content-space-between {
+    justify-content: space-between;
+}
+.font-size-24 {
+    font-size: 24px;
+}
+.text-align-center {
+    text-align: center;
+}
+.padding-16 {
+    padding-top: 16px;
+}
+.font-size-62 {
+    font-size: 62px;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-basis-50-percent {
+    flex-basis:50%;
+}
+.pa-10 {
+    padding: 10px;
+}
+.red-color{
+    color: red;
+}
+.font-size-48 {
+    font-size: 48px;
+}
+@media screen and (max-width: 700px) {
+    .flex-basic-50-percent {
+        flex-basis: 100%;
+    }
+}

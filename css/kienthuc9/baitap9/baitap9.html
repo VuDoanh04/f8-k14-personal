@@ -49,7 +49,6 @@
         }
         table {
             width: 100%;
-            background-color: white;
             margin-bottom: 30px;
         }
         table th, table td {
@@ -129,114 +128,132 @@
         #check:checked ~ .sub-edit {
             display: block;
         }
+        .check1:checked ~ .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* Hiển thị overlay khi checkbox được chọn */
+        }
 
+        /*#check1:checked ~ .overlay .sub-edit {*/
+        /*    display: block; !* Hiển thị sub-edit khi checkbox được chọn *!*/
+        /*}*/
 
-
+        .overlay {
+            z-index: 9 ;/* Ẩn overlay ban đầu */
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+        }
 
     </style>
 </head>
 <body>
-<div class="container">
-    <div class="menu">
-        <h2 class="mdi mdi-stack-overflow">F8 Admin</h2>
-        <span>Menu</span>
-        <ul>
-            <li class="mdi mdi-account"> Quản Lý Đơn Hàng</li>
-            <li class="mdi mdi-account"> Quản Lý Xe</li>
-            <li class="mdi mdi-account"> Quản Lý Dịch Vụ</li>
-            <li class="mdi mdi-account"> Cài Đặt Khác</li>
-        </ul>
-    </div>
-    <div class="members">
-        <h2>Members</h2>
-        <table>
-            <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Mail</th>
-                <th>Action</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>1</td>
-                <td>Tran Van A</td>
-                <td>a@test.con</td>
-                <td>
-                    <label for="check">✏️ edit</label>
-                    <input type="checkbox" id="check" hidden="hidden">
-                    <button class="delete">🗑 delete</button>
-                    <div class="sub-edit">
-                        <div class="header">
-                            <h3>New member</h3>
-                            <label for="check" class="mdi mdi-close"></label>
-                        </div>
-                        <div class="body">
-                            <input type="text" placeholder="Skill" />
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <div class="button">
-                                <button class="close">Close</button>
-                                <button class="save">Save</button>
+<input type="checkbox" id="check1" class="check1" hidden>
+<div class="overlay"></div>
+    <div class="container">
+        <div class="menu">
+            <h2 class="mdi mdi-stack-overflow">F8 Admin</h2>
+            <span>Menu</span>
+            <ul>
+                <li class="mdi mdi-account"> Quản Lý Đơn Hàng</li>
+                <li class="mdi mdi-account"> Quản Lý Xe</li>
+                <li class="mdi mdi-account"> Quản Lý Dịch Vụ</li>
+                <li class="mdi mdi-account"> Cài Đặt Khác</li>
+            </ul>
+        </div>
+        <div class="members">
+            <h2>Members</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Mail</th>
+                    <th>Action</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Tran Van A</td>
+                    <td>a@test.con</td>
+                    <td>
+                        <label for="check">✏️ edit</label>
+                        <input type="checkbox" id="check" hidden="hidden">
+                        <button class="delete">🗑 delete</button>
+                        <div class="sub-edit">
+                            <div class="header">
+                                <h3>New member</h3>
+                                <label for="check" class="mdi mdi-close"></label>
+                            </div>
+                            <div class="body">
+                                <input type="text" placeholder="Skill" />
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <div class="button">
+                                    <button class="close">Close</button>
+                                    <button class="save">Save</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Tran Van A</td>
-                <td>a@test.con</td>
-                <td>
-                    <label for="check">✏️ edit</label>
-                    <input type="checkbox" id="check" hidden="hidden">
-                    <button class="delete">🗑 delete</button>
-                    <div class="sub-edit">
-                        <div class="header">
-                            <h3>New member</h3>
-                            <label for="check" class="mdi mdi-close"></label>
-                        </div>
-                        <div class="body">
-                            <input type="text" placeholder="Skill" />
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <div class="button">
-                                <button class="close">Close</button>
-                                <button class="save">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Tran Van A</td>
+                    <td>a@test.con</td>
+                    <td>
+                        <label for="check">✏️ edit</label>
+                        <input type="checkbox" id="check" hidden="hidden">
+                        <button class="delete">🗑 delete</button>
+                        <div class="sub-edit">
+                            <div class="header">
+                                <h3>New member</h3>
+                                <label for="check" class="mdi mdi-close"></label>
+                            </div>
+                            <div class="body">
+                                <input type="text" placeholder="Skill" />
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <div class="button">
+                                    <button class="close">Close</button>
+                                    <button class="save">Save</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>Tran Van A</td>
-                <td>a@test.con</td>
-                <td>
-                    <label for="check">✏️ edit</label>
-                    <input type="checkbox" id="check" hidden="hidden">
-                    <button class="delete">🗑 delete</button>
-                    <div class="sub-edit">
-                        <div class="header">
-                            <h3>New member</h3>
-                            <label for="check" class="mdi mdi-close"></label>
-                        </div>
-                        <div class="body">
-                            <input type="text" placeholder="Skill" />
-                            <input type="text" placeholder="Name" />
-                            <input type="email" placeholder="Email" />
-                            <div class="button">
-                                <button class="close">Close</button>
-                                <button class="save">Save</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Tran Van A</td>
+                    <td>a@test.con</td>
+                    <td>
+                        <label for="check">✏️ edit</label>
+                        <input type="checkbox" id="check" hidden="hidden">
+                        <button class="delete">🗑 delete</button>
+                        <div class="sub-edit">
+                            <div class="header">
+                                <h3>New member</h3>
+                                <label for="check" class="mdi mdi-close"></label>
+                            </div>
+                            <div class="body">
+                                <input type="text" placeholder="Skill" />
+                                <input type="text" placeholder="Name" />
+                                <input type="email" placeholder="Email" />
+                                <div class="button">
+                                    <button class="close">Close</button>
+                                    <button class="save">Save</button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
 </div>
 </body>
 </html>

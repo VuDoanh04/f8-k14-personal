@@ -1,0 +1,39 @@
+.banner {
+    background-image: url("img/img.png");
+    height: 615px;
+    background-size:contain ;
+    background-repeat: no-repeat ;
+    background-position: center;
+    position: relative;
+
+}
+.invitation {
+    border: 1px solid  #ccc;
+    box-shadow: 0 0 2px #ccc;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top: 20px;
+    left: calc(50% - 400px - 100px);
+    background-color: rgba(255, 255, 255, 0.7);
+
+}
+@media screen and (max-width: 900px) {
+    .banner {
+        background-image: url("img/img_5.png");
+        height: 615px;
+    }
+
+    .invitation {
+        width: 100%;
+        top: 50px;
+        left: 0;
+        transform: initial;
+    }
+}
+@media screen and  (max-width: 700px) {
+    .banner {
+        background-image: url("img/img_5.png");
+    }
+}
