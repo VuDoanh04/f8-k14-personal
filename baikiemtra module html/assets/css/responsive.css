@@ -1,0 +1,811 @@
+/* * *  PC Thiet bi lon hon (min-width: 1024.02px) * * */
+@media (min-width: 1024.02px) {
+
+}
+
+/* * * Thiet bi Table & Mobile: @media screen and (max-width: 991px) * * */
+@media screen and (max-width: 991px) {
+    /* * * Start Header * * *  */
+    .header__btn,
+    .header__list {
+        display: none;
+    }
+    .header__btn-menu {
+        background: #2b2b2b;
+        display: block;
+        border: none;
+        background-image: url("../../assets/img/List.png");
+        width: 24px;
+        height: 24px;
+    }
+    html {
+        max-width: 834px;
+    }
+    .hero {
+        max-width: 834px;
+        height: 542px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0px;
+
+    }
+    .hero .container {
+        max-width: 690px;
+        align-items: flex-start;
+        gap: 30px;
+        padding: unset;
+        margin: unset;
+        flex-wrap: wrap;
+    }
+    .hero-text_buttons {
+        display: flex;
+        max-width: 330px;
+        height: 381px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        flex-shrink: 0;
+    }
+    .hero-text_buttons div h1 {
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%; /* 45.6px */
+        text-transform: capitalize;
+    }
+    .hero-text_buttons div span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%; /* 22.4px */
+    }
+    .hero-text_buttons button {
+        display: flex;
+        height: 60px;
+        padding: 0px 50px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+    .hero-text_buttons ul li strong {
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+    }
+    .hero-text_buttons ul li span  {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .highlighted_nft {
+        display: flex;
+        max-width: 330px;
+        height: 381px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .highlighted_nft img {
+        max-width: 330px;
+        height: 221px;
+    }
+    .highlighted_nft p {
+        max-width: 330px;
+        height: 109px;
+    }
+    .trending-Collection {
+        max-width: 834px;
+        height: 716px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: 40px 0px;
+
+    }
+    .trending-Collection .container {
+        max-width: 690px;
+        gap: 40px;
+        padding: unset;
+        margin: unset;
+    }
+    .section-headline h3 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%; /* 39.2px */
+    }
+    .section-headline span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .collection-card-row {
+        width: 690px;
+        height: 525px;
+        align-items: flex-start;
+        gap: 30px;
+        overflow: hidden;
+        display: flex;
+    }
+    .collection-card-row .collection-card {
+        display: flex;
+    }
+    .top-creators {
+        max-width: 834px;
+        display: flex;
+        padding: 40px 195px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+    .section-Headline-Button {
+        display: flex;
+        max-width: 690px;
+        align-items: flex-end;
+        gap: 100px;
+        position: relative;
+    }
+    .section-Headline-Button button {
+        position: absolute;
+        right: 0;
+    }
+    .artist-cards-grid {
+        overflow: hidden;
+        max-width: 690px;
+    }
+    .artist-card {
+        width: 330px;
+        height: 100px;
+        padding: 20px;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 20px;
+        position: relative;
+    }
+    .artist-avatar {
+        display: flex;
+        position: absolute;
+    }
+    .artist-avatar img {
+        width: 60px;
+        height: 60px;
+        flex-shrink: 0;
+    }
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+        flex: 1 0 0;
+        position: absolute;
+        left: 100px;
+    }
+    .ranking-number {
+        position: absolute;
+        left: 10px;
+        top: 4px;
+    }
+    .browse-categories {
+        display: flex;
+        max-width: 834px;
+        padding: 40px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+    .category-cards-grid {
+        display: flex;
+        width: 690px;
+        height: 470px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .category-cards-row {
+        display: flex;
+        height: 209px;
+        align-items: flex-start;
+        gap: 30px;
+        flex-shrink: 0;
+        align-self: stretch;
+    }
+    .category-card {
+        width: 150px;
+        height: 209px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 0 0;
+    }
+    .category-icon .image {
+        display: flex;
+        width: 150px;
+        height: 142px;
+    }
+    .category-icon1 {
+        width: 150px;
+        height: 142px;
+    }
+    .category-icon1 .icon {
+        width: 80px;
+        height: 80px;
+    }
+    .category-card .text span {
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .nft-cards-row {
+        display: flex;
+        width: 690px;
+        height: 470px;
+        align-items: flex-start;
+        gap: 30px;
+        overflow: hidden;
+    }
+    .magic-nft-highlight {
+        position: relative;
+        padding: unset;
+        background-image: url("../../assets/img/Screen=Tablet1.png");
+    }
+    .magic-nft-highlight img {
+        display: none;
+    }
+    .nft-info-highlight {
+        max-width: 834px;
+        height:    640px;
+    }
+    .frame-240 {
+        display: flex;
+        width: 670px;
+        justify-content: center;
+        align-items: flex-end;
+        position: absolute;
+    }
+
+    .nft-artist-name-button {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        flex: 1 0 0;
+        position: absolute;
+    }
+    .nft-artist-name-button h2 {
+        font-size: 38px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+    }
+    .auction-timer {
+        position: absolute;
+        right: 0;
+    }
+    .works {
+        max-width: 834px;
+        display: flex;
+        padding: 40px 195px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+        align-self: stretch;
+    }
+    .works-container {
+        max-width: 834px;
+    }
+    .works-container-card-row {
+        max-width: 690px;
+    }
+    .works-container-card-col {
+        width: 210px;
+    }
+    .works-container-card-col img {
+        width: 160px;
+        height: 160px;
+    }
+    .works-container-card-col h5 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .works-container-card-col p {
+        font-size: 12px;
+        width: 170px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        text-align: center;
+    }
+    .join-subscribe-widget {
+        max-width: 834px;
+        display: flex;
+        padding: 40px 0px 80px 0px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        align-self: stretch;
+    }
+    .subscribe-widget-container {
+        display: flex;
+        width: 690px;
+        padding: 40px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    .subscribe-widget-container img {
+        width: 300px;
+        height: 280px;
+    }
+    .subscribe-widget-text {
+        max-width: 300px;
+        height: 280px;
+    }
+    .subscribe-widget-text-title h3 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+
+    }
+    .subscribe-widget-text-title p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: 300px;
+    }
+    .subscribe-widget-text-form {
+        height: 108px;
+        background: unset;
+        display: inline;
+    }
+    .subscribe-widget-text-form span {
+        width: 300px;
+        height: 46px;
+        display: flex;
+        padding: 16px 20px;
+        align-items: center;
+        gap: 12px;
+        align-self: stretch;
+        border-radius: 20px;
+        background: #FFF;
+    }
+    .subscribe-widget-text-form button {
+        display: flex;
+        width: 300px;
+        height: 46px;
+        padding: 0px 50px;
+        justify-content: center;
+        align-items: center;
+        align-self: stretch;
+        z-index: 2;
+        position: relative;
+    }
+    .subscribe-widget-text-form button span {
+        background: unset;
+        display: flex;
+        position: absolute;
+    }
+    .subscribe-widget-text-form button img {
+        left: 100px;
+        top:5px;
+        position: absolute;
+    }
+    .container-footer {
+        max-width: 834px;
+        height: 703px;
+    }
+    .footer-container-info {
+        display: flex;
+        width: 690px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+
+
+}
+/*  * * Thiet bi rieng Table: @media screen and (min-width: 768px) and (max-width: 991px) * * */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+{
+    max-width: 690px;
+    padding: 72px 0;
+}
+    .header {
+        padding: 15px 50px;
+    }
+}
+/* * * Thiet bi Mobile: @media screen and (max-width: 767px) * * */
+@media screen and (max-width: 767px) {
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        text-align: center;
+        position: relative;
+    }
+    .header__inner {
+        max-width: 375px;
+        height: 54px;
+        position: absolute;
+        right: 0;
+        left: 0;
+        margin: auto;
+    }
+    .hero {
+        max-width: 375px;
+        height: 786px;
+        padding: 40px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        align-self: stretch;
+        margin: 0 auto;
+    }
+    .hero .container {
+        width: 315px;
+        height: 706px;
+        position: relative;
+        justify-content: center;
+    }
+    .hero-text_buttons {
+        max-width: 315px;
+    }
+    .highlighted_nft {
+        max-width: 315px;
+    }
+    .hero-text_buttons div h1 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .hero-text_buttons div span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        width: unset;
+    }
+    .highlighted_nft {
+        position: absolute;
+        top: 194px;
+
+    }
+    .hero-text_buttons button {
+        position: absolute;
+        width: 315px;
+        bottom: 97px;
+    }
+    .hero-text_buttons ul {
+        position: absolute;
+        bottom: 0;
+    }
+    .hero-text_buttons ul li {
+        width: 85px;
+    }
+    .trending-Collection {
+        max-width: 375px;
+        height: 718px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:0 auto;
+
+    }
+    .trending-Collection .container {
+        max-width: 315px;
+        height: 718px;
+        display: flex;
+        overflow: hidden;
+    }
+    .section-headline {
+        width: 315px;
+        gap: 10px;
+    }
+    .section-headline span {
+        width: unset;
+    }
+    .photos-number-of-additional {
+        max-width: 315px;
+        height: 505px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+
+    }
+    .collection-card-row {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .primary-photo-placeholder  img {
+        width: 315px;
+        height: 315px;
+    }
+    .frame228 img {
+        width: 95px;
+        height: 95px;
+
+    }
+    .frame228 h5 {
+        width: 95px;
+        height: 95px;
+    }
+    .top-creators .container {
+        max-width: 375px;
+        height: 893px;
+        overflow: hidden;
+    }
+    .artist-cards-grid .artist-cards-row {
+        display: inline;
+
+    }
+    .artist-cards-grid  {
+        overflow: hidden;
+    }
+    .artist-card {
+        width: 315px;
+        height: 100px;
+    }
+    .artist-cards-row:nth-of-type(1){
+        display: flex;
+        height: 580px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .artist-cards-row:nth-of-type(2) {
+        display: none;
+    }
+    .artist-cards-row:nth-of-type(3) {
+        display: none;
+    }
+    .browse-categories {
+        width: 375px;
+        height: 1077px;
+        margin: 0 auto;
+        position: relative;
+
+    }
+    .browse-categories .container h3 {
+        padding-bottom: 40px;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .browse-categories .container {
+        width: 315px;
+
+    }
+    .category-card:nth-of-type(3) {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+    .category-card:nth-of-type(4) {
+        position: absolute;
+        bottom: 0;
+    }
+    .category-cards-grid {
+        gap: 20px;
+    }
+    #content1 {
+        position: absolute;
+        bottom: 229px;
+    }
+    #content2 {
+        position: absolute;
+        bottom: 229px;
+    }
+    .category-card {
+        width: 147px;
+        height: 209px;
+        flex: unset;
+    }
+    .category-icon1 {
+        width: 147px;
+    }
+    .category-icon .image {
+        width: 147px;
+    }
+    .discover-more-nfts-sub {
+        max-width: 375px;
+        height: 1557px;
+        position: relative;
+        overflow: unset;
+    }
+    .nft-card {
+        max-width: 315px;
+        height: 402px;
+    }
+    .nft-card-image img {
+        width: 315px;
+        height: 238px;
+    }
+    .nft-card-content {
+        height: 164px;
+    }
+    .nft-cards-row {
+        width: 315px;
+        height: 1246px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px !important;
+        margin: 0 auto  ;
+    }
+    .discover-card-button {
+        position: absolute;
+        bottom: 0;
+        width: 315px;
+    }
+    .section-headline-button .section-headline h3 {
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 140%;
+    }
+    .section-headline-button .section-headline span {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+    }
+    .magic-nft-highlight {
+        position: relative;
+        padding: unset;
+        background-image: url("../../assets/img/Screen=Mobile.png");
+        background-repeat: no-repeat;
+        display: flex;
+        width: 375px;
+        height: 590px;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .magic-nft-highlight img {
+        width: 375px;
+        height: 590px;
+    }
+    .nft-info-highlight {
+        width: 375px;
+        height: 590px;
+        padding: unset  ;
+    }
+    .frame-240 {
+        position: absolute;
+    }
+
+    .nft-artist-name-button {
+        height: 433px;
+        width: 315px;
+
+    }
+    .nft-artist-name-button h2 {
+        width: 315px;
+    }
+    .auction-timer {
+        width: 315px;
+        height: 147px;
+        position: absolute;
+        right: 180px;
+        bottom: 80px;
+    }
+    .nft-artist-name-button .artist-card {
+        width: 151px;
+        height: 44px;
+    }
+    .see-nft {
+        position: absolute;
+        bottom: 0;
+    }
+    .works {
+        width: 315px;
+        height: 685px;
+        margin: 0 auto;
+    }
+    .works-container h3 {
+        font-size: 28px;
+    }
+    .works-container span {
+        font-size: 16px;
+    }
+    .works-container-card-row {
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .works-container-card-col {
+        flex-direction: unset !important;
+        width: 315px;
+        height: 157px;
+        position: relative;
+    }
+    .works-container-card-col img {
+        width: 100px;
+        height: 100px;
+    }
+    .works-container-card-col h5 {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    .works-container-card-col p {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        text-align: left;
+    }
+    .join-subscribe-widget {
+        width: 375px;
+        height: 645px;
+        margin: 0 auto;
+    }
+    .subscribe-widget-container {
+        width: 315px;
+        height: 565px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: unset;
+    }
+    .subscribe-widget-container img {
+        width: 315px ;
+        height: 255px;
+    }
+    .subscribe-widget-text {
+        position: relative;
+    }
+    .subscribe-widget-text-form {
+        position: absolute;
+        bottom: 0px;
+        padding: unset;
+    }
+    .container-footer {
+        display: flex;
+        width: 375px;
+        margin: 0 auto;
+    }
+    .footer-container-info {
+        width: 315px;
+        height: 633px;
+        position: relative;
+    }
+    .subscribe-form-nfo button{
+        display: unset;
+        width: 315px !important;
+        height: 46px;
+    }
+    .subscribe-form-nfo button span {
+        width: 315px !important;
+        height: 46px !important;
+    }
+    .subscribe-form-nfo button strong {
+        width: 315px;
+        height: 46px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        padding-right: 110px;
+    }
+    .explore-subscribe {
+        width: 315px;
+        height: 227px;
+    }
+    .footer-bottom {
+        width: 315px;
+        margin: auto;
+    }
+
+}
